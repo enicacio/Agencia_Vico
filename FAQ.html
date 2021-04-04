@@ -7,21 +7,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 	<!-- SEO Geral -->
-	<title>FAQ - Suporte Oficial - Agência VICO</title>
-	<meta name="description" content="">
+	<title>Suporte Oficial - Agência VICO</title>
+	<meta name="description" content="Suporte Oficial dos cursos de confeitaria da Fabi Viana e Chefe Ana Costa. A resposta para as princípias dúvidas dos alunos, você encontra aqui!">
 	<meta name="author" content="Agência VICO">
 	<meta name="robots" content="index, nofollow">
  
 	<!-- CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="CSS/Estilo.css">
-    <link rel="stylesheet" type="text/scss" href="Javascript/bootstrap.scss">
-
-        
+            
     <!-- JavaScript e Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-    </script>
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> JAVASCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 </head>
 
 <body>
@@ -60,22 +58,20 @@
         <!-- Logo/Banner oficial se houver, no mesmo padrão do site da VICO  -->
         <section id='banner'>
             <a href="https://agenciavico.com.br/">
-                <img src="Imagens/banner_principal.png" class="img-fluid" alt="Banner_VICO">
+                <img src="Imagens/banner_principal.png" class="img-fluid" alt="Banner_VICO" style="width: 100%;">
             </a>
         </section>
-        
        
     <!-- Menu do Bootstrap com search -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Digite sua dúvida" aria-label="Search">
                 <button class="btn btn-outline-secondary" type="submit">Procurar</button>
             </form>
         </div>
-    </nav>
+      </nav>
     <hr>
-
     </header>
 
     <main>
@@ -95,7 +91,7 @@
                 <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-2">Acesso Plataforma EDUZZ/NUTROR</a>
                 <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-3">Acesso a APOSTILA</a>
                 <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-4">RECEITAS E PREPARO</a>
-                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-5">Minha Dúvida não está aqui!</a>
+                <a class="list-group-item list-group-item-action list-group-item-light active" href="#list-item-5">Minha Dúvida não está aqui!</a>
             </div>
             <br>
             <hr>
@@ -104,61 +100,120 @@
                 <h4 id="list-item-1">Acesso Plataforma HOTMART</h4>
                 <p>Para realizar o acesso a sua área do aluno é bem simples, vou descrever abaixo um tutorial como você pode acessar!</p>
                 <p>1 - Caso você tenha acabado de adquirir o curso, verifique o seu e-mail que utilizou para realizar a compra do curso pois os dados de acesso foram enviados para lá. Se você não conseguiu localizar, verifique a sua caixa de Spam e a aba promoções, pois muitas vezes os e-mails podem ir para lá. Utilize a barra de pesquisa no e-mail para localizar mais rapidamente inserindo o nome do curso ou remetente que é "Hotmart".</p>
-                <p>2 - Se você já tem cadastro na Hotmart para ficar mais simples basta você clicar nesse link para acessar todos os cursos que você tem acesso na plataforma.
-                    <a href="https://purchase.hotmart.com/"><strong>https://purchase.hotmart.com/</strong></a>
-                </p>
+                <!-- Card da Hotmart-->
+                <div class="card mb-3" style="max-width: 720px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Imagens/Login_hotmart.PNG" class="card-img-top" alt="Login_hotmart">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Acesso na Hotmart</h5>
+                                <p class="card-text">Se você já tem cadastro na Hotmart para ficar mais simples basta você clicar no <strong>botão abaixo</strong> para acessar todos os cursos que você tem na plataforma.</p>
+                                <a href="https://purchase.hotmart.com/" class="btn btn-secondary">Login - Aqui</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
                         <strong>Não Conseguiu?</strong> Chame a nossa equipe no Whatsapp!
-                        <a href="#Link_whatsapp"><strong>Clique Aqui!</strong></a>
+                        <a href="http://bit.ly/alunosuporte"><strong>Clique Aqui!</strong></a>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 </p>
                 <hr>
+                <br>
                 <h4 id="list-item-2">Acesso Plataforma EDUZZ/NUTROR</h4>
                 <p>Para realizar o acesso a sua área do aluno é bem simples, vou descrever abaixo um tutorial como você pode acessar!</p>
                 <p>1 - Caso você tenha acabado de adquirir o curso, verifique o seu e-mail que utilizou para realizar a compra do curso pois os dados de acesso foram enviados para lá. Se você não conseguiu localizar, verifique a sua caixa de Spam e a aba promoções, pois muitas vezes os e-mails podem ir para lá. Utilize a barra de pesquisa no e-mail para localizar mais rapidamente inserindo o nome do curso ou remetente que pode ser: "Nutror", "Eduzz" ou "Fabí Viana".</p>
-                <p>2 - Se você já tem cadastro na Eduzz para ficar mais simples basta você clicar nesse link para acessar todos os cursos que você tem acesso na plataforma.
-                    <a href="https://app.nutror.com/v3/"><strong>https://app.nutror.com/v3/</strong></a>
-                </p>
+                <!-- Card da Eduzz-->
+                <div class="card mb-3" style="max-width: 720px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Imagens/Login_eduzz.PNG" class="card-img-top" alt="Login_eduzz">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Acesso na Eduzz/Nutror</h5>
+                                <p class="card-text">Se você já tem cadastro na Eduzz para ficar mais simples basta você clicar no <strong>botão abaixo</strong> para acessar todos os cursos que você tem na plataforma.</p>
+                                <a href="https://app.nutror.com/v3/" class="btn btn-secondary">Login - Aqui</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
                         <strong>Não Conseguiu?</strong> Chame a nossa equipe no Whatsapp!
-                        <a href="#Link_whatsapp"><strong>Clique Aqui!</strong></a>
+                        <a href="http://bit.ly/alunosuporte"><strong>Clique Aqui!</strong></a>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 </p>
                 <hr>
+                <br>
                 <h4 id="list-item-3">Acesso a APOSTILA</h4>
-                <p>A apostila do seu curso está no <strong>"Módulo 1 - Comece por aqui"</strong>. Para realizar download, clique em cima do arquivo. Não se esqueça de ter um leitor de PDF instalado no seu celular ou computador para conseguir abrir o arquivo!
+                <p>A apostila do seu curso está no <strong>"Módulo - Apostila Completa"</strong>. Para realizar download, clique em cima do arquivo. Não se esqueça de ter um leitor de PDF instalado no seu celular ou computador para conseguir abrir o arquivo!
                 </p>
-                <p>Para realizar o download da apostila certifique-se que está acessando sua área do aluno através do navegador do seu dispositivo e não de um aplicativo como "Sparkle ou Nutror".<stong>O download da apostila não funciona via aplicativo!</stong>
-                </p>
+                <!-- Card da Apostila-->
+                <div class="card mb-3" style="max-width: 720px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Imagens/apostila.jpg" class="card-img-top" alt="Apostila">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Acesso pela Barra Lateral da Plataforma</h5>
+                                <p class="card-text">Para realizar o download da apostila certifique-se que está acessando sua área do aluno através do navegador do seu dispositivo e não de um aplicativo como "Sparkle ou Nutror".<stong>O download da apostila não funciona via aplicativo!</stong>.</p>
+                                <!-- Inserir Vídeo Tutorial Aqui 
+                                <a href="https://app.nutror.com/v3/" class="btn btn-secondary">Assista o tutorial Aqui</a> -->
+                            </div>
+                        </div>
+                    </div>  
+                </div>
                 <p>
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
                         <strong>Não Conseguiu?</strong> Chame a nossa equipe no Whatsapp!
-                        <a href="#Link_whatsapp"><strong>Clique Aqui!</strong></a>
+                        <a href="http://bit.ly/alunosuporte"><strong>Clique Aqui!</strong></a>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 </p>
                 <hr>
+                <br>
                 <h4 id="list-item-4">RECEITAS E PREPARO</h4>
-                <p>
-                <strong>Surgiu aquela dúvida na hora de preparar as receitas do curso?</strong> 
-                <br>Calma! Você consegue enviar elas pela plataforma do curso também. Caso tenha dúvidas sobre as receitas, métodos ou processos do curso você pode estar colocando a sua dúvida em baixo do campo de <strong>comentário</strong> que existe em baixo de cada vídeo aula. Nesse campo você será respondido diretamente pela sua professora.
+                <p>Surgiu aquela dúvida na hora de preparar as receitas do curso?
+                    <br>Calma! Você consegue enviar suas dúvidas diretamente pela plataforma. 
                 </p>
+                <!-- Card das Receitas-->
+                <div class="card mb-3" style="max-width: 720px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Imagens/coment.jpeg" class="card-img-top" alt="Comentários">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Área de Comentários na Plataforma</h5>
+                                <p class="card-text">Caso tenha dúvidas sobre as receitas, métodos ou processos do curso você pode estar colocando a sua dúvida em baixo do campo de <strong>comentário</strong> que existe em baixo de cada vídeo aula. Nesse campo você será respondido diretamente pela sua professora.
+                                </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>        
                 <p>
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
                         <strong>Não Conseguiu?</strong> Chame a nossa equipe no Whatsapp!
-                        <a href="#Link_whatsapp"><strong>Clique Aqui!</strong></a>
+                        <a href="http://bit.ly/alunosuporte"><strong>Clique Aqui!</strong></a>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 </p>
                 <hr>
+                <br>
                 <h4 id="list-item-5">Minha dúvida não está aqui!</h4>
-                <p>
-                    Neste caso, fale diretamente com a nossa equipe pelo Whatsapp
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <p>Não se preocupe, meste caso a nossa equipe está pronta para te atender pelo Whatsapp!
+                    <br> Não esqueça de informar seu <strong>Nome completo, email</strong>, e a sua dúvida detalhada, para agilizar o atendimento.
+                    <p> Os horários de atendimento pelo Whatsapp:
+                        <li>Segunda a Sexta-Feira: Das 09h às 18h</li>
+                        <li>Sábado: Das 09h às 14h</li></p>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light d-inline-flex p-2 bd-highlight">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="http://bit.ly/alunosuporte">
                                 <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="30" height="30" class="d-inline-block align-text-top"> Clique Aqui para iniciar a conversa</a>
@@ -176,10 +231,9 @@
 
     <section id='endereço'>
         <div class="fs-6 text-center p-3 mb-2 bg-dark text-white">
-            | Agência VICO LTDA - CNPJ: 37.233.181/0001-06 |
+            <small>| Agência VICO LTDA - CNPJ: 37.233.181/0001-06 |
             <br> Endereço: Rua Frontino Alexandrino Freire, 193 - Sala 10
-            <br> Jardim América - Sorocaba/SP
-            <br> 
+            <br> Jardim América - Sorocaba/SP</small>
         </div>
     </section>
 
