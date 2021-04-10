@@ -1,154 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-
-	<!-- Responsive Meta/Adaptação Mobile -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-	<!-- SEO Geral -->
 	<title>Suporte Oficial - Agência VICO</title>
-	<meta name="description" content="Suporte Oficial dos cursos de confeitaria da Fabi Viana e Chefe Ana Costa. A resposta para as princípias dúvidas dos alunos, você encontra aqui!">
+    <meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive Meta/Adaptação Mobile -->
+	   
+	<!-- SEO Geral  -->
+    <meta name="description" content="Suporte Oficial dos cursos de confeitaria da Fabi Viana e Chefe Ana Costa. A resposta para as princípias dúvidas dos alunos, você encontra aqui!">
 	<meta name="author" content="Agência VICO">
 	<meta name="robots" content="index, nofollow">
  
-	<!-- CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="CSS/Estilo.css">
-            
-    <!-- JavaScript e Popper -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- CSS, JavaScript e Popper-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <header>
-        <!-- Barrinha de aviso para alunos - Toasts Placement Bootstrap - NÃO ESTÁ FUNCIONANDO -->
-        <div aria-live="polite" aria-atomic="true" class="position-relative">
-            <div class="toast-container position-absolute top-0 end-0 p-3">
-        
-            <!-- Then put toasts within -->
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-                <div class="toast-header">
-                <img src="Imagens/robot_face.png" class="rounded me-2" width="24" height="24" alt="Robô VICO">
-                <strong class="me-auto">Assistente Virtual VICO</strong>
+    <!-- Barrinha Toast do Robô -->
+    <div class="toast-container position-absolute top-0 end-0 p-3">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="rounded me-2" >
+                <strong class="me-auto">Olá! Sou seu Assistente Virtual!</strong>
                 <small class="text-muted">Agora</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                Escolha na lista abaixo o assunto para o qual deseja suporte, e vamos lá!
-                </div>
+                <button type="button" class="btn-close ml-2 mb-1 close" data-dismiss="toast"></button>
             </div>
-        
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-                <div class="toast-header">
-                <img src="Imagens/robot_face.png" class="rounded me-2" width="24" height="24" alt="Robô VICO">
-                <strong class="me-auto">Assistente Virtual VICO</strong>
-                <small class="text-muted">2 segundos atrás</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                Olá! Vamos iniciar o seu suporte através do FAQ!
-                </div>
-            </div>
+            <div class="toast-body" role="alert" aria-live="assertive" aria-atomic="true">
+                    Para dar início ao suporte, escolha sua dúvida na lista abaixo
             </div>
         </div>
-        
-        <!-- Logo/Banner oficial se houver, no mesmo padrão do site da VICO  -->
-        <section id='banner'>
-            <a href="https://agenciavico.com.br/">
-                <img src="Imagens/banner_principal.png" class="img-fluid" alt="Banner_VICO" style="width: 100%;">
-            </a>
-        </section>
-       
-    <!-- Menu do Bootstrap com search -->
-    <nav class="navbar navbar-light bg-light">
+    </div>
+
+    <!-- JS da barra toast -->
+    <script>
+        $(document).ready(function(){
+          $('.toast').toast({autohide: false});
+          $('.toast').toast('show');
+        });
+    </script>
+
+    <!-- Banner da VICO -->
+    <section id='banner'>
+        <a href="https://agenciavico.com.br/">
+            <img src="Imagens/banner_principal.png" class="img-fluid" alt="Banner_VICO" style="width: 100%;">
+        </a>
+    </section>
+    
+    <!-- Intro -->
+    <p>
+    <div class="container-fluid">
+    <h2>Bem vindo à Central de Suporte ao Aluno da Agência VICO</h2><br>
+        <p>As principais dúvidas e solicitações que os alunos fazem já estão aqui! 
+        <br>Caso não encontre o que precisa, você também pode nos chamar no Whatsapp.</p>
+    </div>
+    </p>
+
+    <!-- Botão Search em JavaScript 
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
         <div class="container-fluid">
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Digite sua dúvida" aria-label="Search">
-                <button class="btn btn-outline-secondary" type="submit">Procurar</button>
+              <input type="text" id="pesquisa" onkeyup="" placeholder="Digite sua dúvida"class="form-control me-2" aria-label="Search">
+              <button class="btn btn-light" type="submit">Procurar</button>
             </form>
         </div>
-      </nav>
-    <hr>
-    </header>
+    </nav>
+    <script type="text/JavaScript" src="/Javascript/script.js"></script> -->
+    <br>
 
     <main>
-        <section id='intro'>
-            <div class="container-fluid">
-            <h1>Bem vindo à Central de Suporte ao Aluno da Agência VICO</h1>
-            <br>
-            <p>As principais dúvidas e solicitações que os alunos fazem já estão aqui! 
-                <br>Caso não encontre o que precisa, você também pode nos chamar no Whatsapp.</p>
-            </div>
-            <hr>
-        </section>
-
         <section id='FAQ' class="container-fluid">
-            <div id="list-example" class="list-group">
-                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-1">Acesso Plataforma HOTMART</a>
-                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-2">Acesso Plataforma EDUZZ/NUTROR</a>
+            <div id="list-example" class="list-group" align="center">
+                <a class="list-group-item list-group-item-action list-group-item-light active" href="#list-item-1">Acesso ao curso na HOTMART</a>
+                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-2">Acesso ao curso na EDUZZ/NUTROR</a>
                 <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-3">Acesso a APOSTILA</a>
-                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-4">RECEITAS E PREPARO</a>
-                <a class="list-group-item list-group-item-action list-group-item-light active" href="#list-item-5">Minha Dúvida não está aqui!</a>
+                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-4">Acesso ao meu Bônus</a>
+                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-5">Comunidade Facebook - Chefe Ana Costa</a>
+                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-6">Comunidade Facebook - Fabi Viana</a>
+                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-7">Dúvidas sobre RECEITAS e Utensílios</a>
+                <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-8">Minha Dúvida não está aqui!</a>
             </div>
-            <br>
             <hr>
+            <br>
             <p>
             <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                <h4 id="list-item-1">Acesso Plataforma HOTMART</h4>
-                <p>Para realizar o acesso a sua área do aluno é bem simples, vou descrever abaixo um tutorial como você pode acessar!</p>
-                <p>1 - Caso você tenha acabado de adquirir o curso, verifique o seu e-mail que utilizou para realizar a compra do curso pois os dados de acesso foram enviados para lá. Se você não conseguiu localizar, verifique a sua caixa de Spam e a aba promoções, pois muitas vezes os e-mails podem ir para lá. Utilize a barra de pesquisa no e-mail para localizar mais rapidamente inserindo o nome do curso ou remetente que é "Hotmart".</p>
+                <h4 id="list-item-1">Acesso ao curso na HOTMART</h4><br>
+                <p>Caso tenha <strong>perdido o seu link de acesso</strong> ao curso, ou precise <strong>revisar uma aula</strong> enquanto faz aquela receita, não se preocupe!
+                <br>Lembre-se sempre de acessar o curso por um navegador de internet, no celular, ou em outros dispositivos, assim não terá problemas para assistir o curso!</p>
                 <!-- Card da Hotmart-->
                 <div class="card mb-3" style="max-width: 720px;">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="Imagens/Login_hotmart.PNG" class="card-img-top" alt="Login_hotmart">
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Acesso na Hotmart</h5>
-                                <p class="card-text">Se você já tem cadastro na Hotmart para ficar mais simples basta você clicar no <strong>botão abaixo</strong> para acessar todos os cursos que você tem na plataforma.</p>
-                                <a href="https://purchase.hotmart.com/" class="btn btn-secondary">Login - Aqui</a>
-                            </div>
+                        <div class="col-md-8" align="center">
+                            <div class="card-body" >
+                                <p class="card-text">Tendo o seu email e senha em mãos, basta você clicar no <strong>botão abaixo</strong> para acessar todos os cursos que você tem na plataforma.</p>
+                                <a href="https://purchase.hotmart.com/" class="btn btn-warning">Login - Aqui</a>
+                            </div>  
                         </div>
                     </div>
                 </div>
-                <p>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong>Não Conseguiu?</strong> Chame a nossa equipe no Whatsapp!
-                        <a href="http://bit.ly/alunosuporte"><strong>Clique Aqui!</strong></a>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                </p>
+                <div class="alert alert-secondary" role="alert">
+                    <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top" >
+                    <strong>Esqueceu sua senha?</strong>
+                    <hr>
+                    <p>Calma! Vamos resolver isso também. Basta clicar na opção de <strong>"Esqueceu sua senha"</strong>que o Hotmart te enviará por email todas as instruções para criar uma senha nova!</p>
+                </div>
+                <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                    <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                    Não Conseguiu? Tudo bem, clique aqui para nos enviar uma mensagem!</a></p>
                 <hr>
                 <br>
-                <h4 id="list-item-2">Acesso Plataforma EDUZZ/NUTROR</h4>
-                <p>Para realizar o acesso a sua área do aluno é bem simples, vou descrever abaixo um tutorial como você pode acessar!</p>
-                <p>1 - Caso você tenha acabado de adquirir o curso, verifique o seu e-mail que utilizou para realizar a compra do curso pois os dados de acesso foram enviados para lá. Se você não conseguiu localizar, verifique a sua caixa de Spam e a aba promoções, pois muitas vezes os e-mails podem ir para lá. Utilize a barra de pesquisa no e-mail para localizar mais rapidamente inserindo o nome do curso ou remetente que pode ser: "Nutror", "Eduzz" ou "Fabí Viana".</p>
+                <h4 id="list-item-2">Acesso ao curso na EDUZZ/NUTROR</h4><br>
+                <p>Caso tenha <strong>perdido o seu link de acesso</strong> ao curso, ou precise <strong>revisar uma aula</strong> enquanto faz aquela receita, não se preocupe!
+                <br>Lembre-se sempre de acessar o curso por um navegador de internet, no celular, ou em outros dispositivos, assim não terá problemas para assistir o curso!</p>
                 <!-- Card da Eduzz-->
                 <div class="card mb-3" style="max-width: 720px;">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="Imagens/Login_eduzz.PNG" class="card-img-top" alt="Login_eduzz">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8" align="center">
                             <div class="card-body">
-                                <h5 class="card-title">Acesso na Eduzz/Nutror</h5>
-                                <p class="card-text">Se você já tem cadastro na Eduzz para ficar mais simples basta você clicar no <strong>botão abaixo</strong> para acessar todos os cursos que você tem na plataforma.</p>
-                                <a href="https://app.nutror.com/v3/" class="btn btn-secondary">Login - Aqui</a>
+                                <p class="card-text">Tendo o seu email e senha em mãos, basta você clicar no <strong>botão abaixo</strong> para acessar todos os cursos que você tem na plataforma.</p>
+                                <a href="https://app.nutror.com/v3/" class="btn btn-primary">Login - Aqui</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong>Não Conseguiu?</strong> Chame a nossa equipe no Whatsapp!
-                        <a href="http://bit.ly/alunosuporte"><strong>Clique Aqui!</strong></a>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                </p>
+                <div class="alert alert-danger" role="alert">
+                    <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top" >
+                    <strong>PROBLEMAS NA SENHA</strong>? Calma!
+                    <hr>
+                    A Eduzz recentemente fez uma atualização da sua política de segurança de dados, devido a Lei LGPD.
+                    <br>Por este motivo todos os alunos tiveram que criar novas senhas. Isso não aconteceu só com você ;)
+                </div>
+                <p>Sendo assim, você precisará criar uma nova senha, clicando em <strong>"Esqueceu a senha"</strong>, e em seguida informar o seu email para que a Eduzz verifique que realmente é você. Depois é só seguir as instruções enviadas no seu email, e pronto, sua nova senha será criada e você voltará a acessar seu curso.</p>
+                <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                    <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                    Não Conseguiu? Tudo bem, clique aqui para nos enviar uma mensagem!</a></p>
                 <hr>
                 <br>
                 <h4 id="list-item-3">Acesso a APOSTILA</h4>
@@ -160,82 +156,188 @@
                         <div class="col-md-4">
                             <img src="Imagens/apostila.jpg" class="card-img-top" alt="Apostila">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8" align="center">
                             <div class="card-body">
                                 <h5 class="card-title">Acesso pela Barra Lateral da Plataforma</h5>
-                                <p class="card-text">Para realizar o download da apostila certifique-se que está acessando sua área do aluno através do navegador do seu dispositivo e não de um aplicativo como "Sparkle ou Nutror".<stong>O download da apostila não funciona via aplicativo!</stong>.</p>
+                                <p class="card-text">Para realizar o download da apostila certifique-se que está acessando sua área do aluno através do navegador do seu dispositivo e não de um aplicativo como "Sparkle ou Nutror". <strong>O download da apostila não funciona via aplicativo!</strong>.</p>
                                 <!-- Inserir Vídeo Tutorial Aqui 
                                 <a href="https://app.nutror.com/v3/" class="btn btn-secondary">Assista o tutorial Aqui</a> -->
                             </div>
                         </div>
                     </div>  
                 </div>
-                <p>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong>Não Conseguiu?</strong> Chame a nossa equipe no Whatsapp!
-                        <a href="http://bit.ly/alunosuporte"><strong>Clique Aqui!</strong></a>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                </p>
+                <div class="alert alert-info" role="alert">
+                    <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top" >
+                    <strong>Não se esqueça:</strong>
+                    <hr>
+                    Cada curso possui uma numeração diferente para este módulo, então sempre procure nos primeiros módulos do curso, e pelo nome <i>Apostila Completa</i>.
+                </div>
+                <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                    <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                    Não Conseguiu? Tudo bem, clique aqui para nos enviar uma mensagem!</a></p>
                 <hr>
                 <br>
-                <h4 id="list-item-4">RECEITAS E PREPARO</h4>
-                <p>Surgiu aquela dúvida na hora de preparar as receitas do curso?
-                    <br>Calma! Você consegue enviar suas dúvidas diretamente pela plataforma. 
+                <h4 id="list-item-4">Acesso ao meu BÔNUS</h4>
+                <p>No lançamento de alguns cursos, as professoras disponibilizam bônus para seus alunos, de acordo com as regras estabelecidas em cada lançamento.
+                    <br> Caso você tenha se enquadrado nessas regras e ganhou o bônus, parabéns! 
+                    <br> Agora para acessar ele é muito fácil, <b>aguarde o prazo de disponibilização</b> informado pela sua professora, e depois <u>acesse ele diretamente pela plataforma do seu curso</u>.</p>
+                    <p>Abaixo escolha qual é a sua plataforma, e entre através de um navegador de internet (no celular ou computador).</p>
+                <!-- Card Hotmart-->
+                <div class="card mb-3" style="max-width: 720px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Imagens/Login_hotmart.PNG" class="card-img-top" alt="Login_hotmart">
+                        </div>
+                        <div class="col-md-8" align="center">
+                            <div class="card-body">
+                                <p class="card-text">Tendo o seu email e senha em mãos, basta você clicar no <i>botão abaixo</i> para acessar todos os <strong>Cursos e Bônus</strong> que você tem na plataforma.</p>
+                                <a href="https://purchase.hotmart.com/" class="btn btn-warning">Login - Aqui</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- Card da Eduzz-->
+                <div class="card mb-3" style="max-width: 720px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Imagens/Login_eduzz.PNG" class="card-img-top" alt="Login_eduzz">
+                        </div>
+                        <div class="col-md-8" align="center">
+                            <div class="card-body">
+                                <p class="card-text">Tendo o seu email e senha em mãos, basta você clicar no <i>botão abaixo</i> para acessar todos os <strong>Cursos e Bônus</strong> que você tem na plataforma.</p>
+                                <a href="https://app.nutror.com/v3/" class="btn btn-primary">Login - Aqui</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-info" role="alert">
+                    <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top" >
+                    <strong>Informação importante:</strong>
+                    <hr>
+                    Os cursos disponibilizados como bônus, não estão disponíveis para venda, ok?
+                    <br> Mas calma, se tivermos novidades, vamos avisar os alunos por email!
+                </div>
+                <hr>
+                <br>
+                <h4 id="list-item-5">Comunidade Facebook - Chefe Ana Costa</h4>
+                <p>A Chefe Ana Costa criou uma comunidade exclusiva no Facebook para os alunos do curso <strong>Masterclass Bolo Clássico Bem Feito 2.0!</strong>. Para solicitar a participação, você precisa entrar na plataforma do curso, e procurar pelo <strong>"Módulo - Comunidade Facebook"</strong>.
                 </p>
+                <!-- Card Comunidade Ana Costa -->
+                <div class="card mb-3" style="max-width: 720px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Imagens/Face_Ana1.jpg" class="card-img-top" alt="Face Ana">
+                        </div>
+                        <div class="col-md-8" align="center">
+                            <div class="card-body">
+                                <h5 class="card-title">Acesso pela Barra Lateral da Plataforma</h5>
+                                <p class="card-text">Leia todas as orientações deste módulo, e solicite a participação através do link que está ao final das orientações, em <strong>Leitura Complementar</strong>, depois é só aguardar a aprovação, que ocorrerá em até 24h. 
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top" >
+                    <strong>Não se esqueça:</strong>
+                    <hr>
+                    Não deixe de <i>informar seu email</i> durante a solicitação, senão a participação na comunidade será recusada!
+                </div>
+                <hr>
+                <br>
+                <h4 id="list-item-6">Comunidade Facebook - Fabi Viana</h4>
+                <p>A Fabi Viana criou uma comunidade exclusiva para todas as turmas do curso <strong>Bolos Perfeitos em Buttercream</strong>. Para solicitar a participação, você precisa entrar na plataforma do curso, e procurar pelo <strong>"Módulo 2 - Comece por Aqui"</strong>.
+                </p>
+                <!-- Card Comunidade Fabi Viana-->
+                <div class="card mb-3" style="max-width: 720px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Imagens/Face_Fabi.jpeg" class="card-img-top" alt="Face Ana">
+                        </div>
+                        <div class="col-md-8" align="center">
+                            <div class="card-body">
+                                <h5 class="card-title">Acesso pela Barra Lateral da Plataforma</h5>
+                                <p class="card-text">Dentro do módulo 2, acesse a aula <i>"Comunidade exclusiva de alunos no Facebook"</i>, preencha o formulário para onde será direcionado, e ao final da página clique no link da comunidade.
+                                <br>Ao abrir a página da comunidade, solicite a participação diretamente no Facebook. A aprovação ocorrerá em até 24h. 
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top" >
+                    <strong>Não se esqueça:</strong>
+                    <hr>
+                    Não deixe de preencher todos os dados do formulário, e nem <i>informar seu email</i> durante a solicitação, senão a participação na comunidade será recusada!
+                </div>
+                <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                    <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                    É aluno e sua solicitação não foi aprovada? Clique aqui para nos enviar uma mensagem!</a></p>
+                <hr>
+                <br>
+                <h4 id="list-item-7">Dúvidas sobre Receitas e Utensílios</h4><br>
+                    <strong>Surgiu aquela dúvida na hora de preparar as receitas do curso?</strong>
+                    <hr>
+                    <p><img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top">
+                    Bem que eu gostaria de te ajudar, mas ... eu sou só uma Assistente Virtual!
+                    <br>Ainda bem que você consegue enviar todas as suas dúvidas diretamente pela plataforma.</p>
                 <!-- Card das Receitas-->
                 <div class="card mb-3" style="max-width: 720px;">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="Imagens/coment.jpeg" class="card-img-top" alt="Comentários">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8" align="center">
                             <div class="card-body">
                                 <h5 class="card-title">Área de Comentários na Plataforma</h5>
-                                <p class="card-text">Caso tenha dúvidas sobre as receitas, métodos ou processos do curso você pode estar colocando a sua dúvida em baixo do campo de <strong>comentário</strong> que existe em baixo de cada vídeo aula. Nesse campo você será respondido diretamente pela sua professora.
+                                <p class="card-text">A sua dúvida vai ali em baixo da video aula, no campo de <strong>Comentários</strong>. Nesse campo você será respondido diretamente pela sua professora.
                                 </p>
                             </div>
                         </div>
                     </div>  
                 </div>        
-                <p>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong>Não Conseguiu?</strong> Chame a nossa equipe no Whatsapp!
-                        <a href="http://bit.ly/alunosuporte"><strong>Clique Aqui!</strong></a>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                </p>
                 <hr>
                 <br>
-                <h4 id="list-item-5">Minha dúvida não está aqui!</h4>
-                <p>Não se preocupe, meste caso a nossa equipe está pronta para te atender pelo Whatsapp!
-                    <br> Não esqueça de informar seu <strong>Nome completo, email</strong>, e a sua dúvida detalhada, para agilizar o atendimento.
-                    <p> Os horários de atendimento pelo Whatsapp:
+                <h4 id="list-item-8">Minha dúvida não está aqui!</h4>
+                <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top">
+                    Poxa que pena, eu gostaria tanto de ter te ajudado!
+                    <p>Mas a nossa equipe está pronta para te atender pelo Whatsapp!
+                    <br> Não esqueça de informar seu <strong>Nome completo, email</strong>, e a sua <strong>dúvida detalhada</strong>, para agilizar o atendimento.</p>
+                    <p> Os horários de atendimento pelo Whatsapp são:
                         <li>Segunda a Sexta-Feira: Das 09h às 18h</li>
                         <li>Sábado: Das 09h às 14h</li></p>
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light d-inline-flex p-2 bd-highlight">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="http://bit.ly/alunosuporte">
-                                <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="30" height="30" class="d-inline-block align-text-top"> Clique Aqui para iniciar a conversa</a>
-                        </div>
-                    </nav>
-                </p>
+                    <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                        <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                        Clique Aqui e Aguarde o Atendimento</a>
+                    </p>
             </div>
             </p>
         </section>
     </main>
 
     <footer>
-    <!-- Menu Social -->
-    <hr>
-
-    <section id='endereço'>
         <div class="fs-6 text-center p-3 mb-2 bg-dark text-white">
+        <!-- <section id="menu_social">
+            <a href="https://www.facebook.com/agenciavico/">
+            <img src="Imagens/icone_facebook.PNG" alt="Facebook" style="width:30px;height:30px;">
+            </a>
+            <a href="https://www.instagram.com/agenciavico/">
+            <img src="Imagens/icone_instagram.PNG" alt="Insta" style="width:30px;height:30px;">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5515988265265">
+            <img src="Imagens/icone_whatsapp2.PNG" alt="Whatsapp" style="width:30px;height:30px;">
+            </a>
+        </section>
+        <br>-->
+        <section id='endereço'>
             <small>| Agência VICO LTDA - CNPJ: 37.233.181/0001-06 |
-            <br> Endereço: Rua Frontino Alexandrino Freire, 193 - Sala 10
+            <br> Rua Frontino Alexandrino Freire, 193 - Sala 10
             <br> Jardim América - Sorocaba/SP</small>
+        </section>
+        <section id="fale conosco VICO">
+            <a class="btn btn-dark btn-sm" href="https://api.whatsapp.com/send?phone=5515988265265" role="button">
+                <img src="Imagens/icone_whatsapp2.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                Fale com a Agência VICO!</a>    
+        </section>
         </div>
-    </section>
 
     </footer>
     </body>
