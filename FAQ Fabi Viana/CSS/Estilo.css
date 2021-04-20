@@ -1,0 +1,8 @@
+/* Box-Sizing CSS */
+.selector-for-some-widget {
+	box-sizing: content-box;}
+
+.card-header {
+	background-color: #721c24 !important;
+	color:white !important;
+}

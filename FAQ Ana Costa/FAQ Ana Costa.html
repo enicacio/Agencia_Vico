@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Suporte Oficial - Chefe Ana Costa</title>
+    <meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive Meta/Adaptação Mobile -->
+	   
+	<!-- SEO Geral  -->
+    <meta name="description" content="Brasel, esse é o suporte oficial dos cursos de confeitaria artesanal da Chefe Ana Costa. A resposta para as princípias dúvidas dos alunos, você encontra aqui!">
+	<meta name="author" content="Agência VICO">
+	<meta name="robots" content="index, nofollow">
+ 
+	<!-- CSS, JavaScript e Popper-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Estilo.css">
+
+</head>
+
+<body>
+    <!-- Barrinha Toast do Robô -->
+    <div class="toast-container position-absolute top-0 end-0 p-3">
+        <div class="toast bg-light" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="rounded me-2" >
+                <strong class="me-auto">  Assistente Virtual VICO:</strong>
+                <small class="text-muted">Agora</small>
+                <button type="button" class="btn-close ml-2 mb-1 close" data-dismiss="toast"></button>
+            </div>
+            <div class="toast-header" role="alert" aria-live="assertive" aria-atomic="true">
+                Olá! Vamos iniciar o suporte? Escolha sua dúvida na lista abaixo:
+            </div>
+        </div>
+    </div>
+
+    <!-- JS da barra toast -->
+    <script>
+        let toast = () => {
+          $('.toast').toast({autohide: false});
+          $('.toast').toast('show');
+        };
+        $(document).ready(setTimeout(toast, 2000));
+    </script>
+
+    <!-- Banner da Ana Costa Provisório -->
+    <section id='banner' align="center">
+        <img src="Imagens/banner_principal_ana.jpeg" class="img-fluid" alt="Banner_VICO">
+    </section>
+    
+    <!-- Intro -->
+    <p><div class="container-fluid text-center">
+        <h3>Bem vindo à Central de Suporte aos alunos da Chefe Ana Costa</h3>
+        <br>
+        <p>Fala Braseell! As principais dúvidas e solicitações que os meus alunos fazem estão aqui!
+        <hr>Caso não encontre o que precisa, você também pode chamar a minha equipe de suporte no Whatsapp.</p>
+    </div>
+    </p>
+    <hr>
+
+    <main>
+        <section id='FAQ' class="container-fluid">
+            <div id="list-example" class="list-group" align="center">
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-1">Onde acesso o meu curso?</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-2">Não sei onde está a Apostila!</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-3">Cadê o meu Bônus?</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger active" href="#list-item-4">Quero entrar na Comunidade no Facebook</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-5">Perguntas para a Chefe Ana Costa</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-6">Canal de venda dos cursos</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-7">Minha Dúvida não está aqui!</a>
+            </div>
+            <br>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                <div id="list-item-1" class="card text-center">
+                    <div class="card-header">
+                        <h4>Acesso à plataforma do curso</h4>
+                    </div>
+                    <div class="card-body" align="center">
+                        <p class="card-text">Caso tenha perdido o seu link de acesso ao curso, ou precise <strong>revisar uma aula</strong> enquanto faz aquela receita, não se preocupe!
+                        <hr>
+                        Lembre-se sempre de <strong>acessar o curso por um navegador de internet</strong>, no celular, ou em outros dispositivos, assim não terá problemas para assistir o curso!</p>
+                        <hr>
+                        <p><strong>Veja como é fácil entrar na plataforma:</strong></p>
+                        <p><img src="GIFs/purchase.gif" alt="purchase"></p><!-- GIF Login Hotmart -->
+                        <!-- Card da Hotmart-->
+                        <div class="card mb-3" style="max-width: 720px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="Imagens/Login_hotmart.PNG" class="card-img-top" alt="Login_hotmart">
+                                </div>
+                                <div class="col-md-8" align="center">
+                                    <div class="card-body bg-light bg-gradient" >
+                                        <p class="card-text">Tendo o seu email e senha em mãos, basta você clicar no <strong>botão abaixo</strong> para acessar todos os cursos que você tem na plataforma.</p>
+                                        <a href="https://purchase.hotmart.com/" class="btn btn-warning">Login - Aqui</a>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-secondary" role="alert" style="max-width: 720px" align="center" >
+                            <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top">
+                            <strong>Esqueceu sua senha?</strong>
+                            <hr>
+                            Basta clicar na opção de <strong>"Esqueceu sua senha"</strong>que o Hotmart te enviará por email todas as instruções para criar uma senha nova!    
+                        </div>
+                        <p align="center">
+                            <a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                            <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                            Não Conseguiu? Clique aqui e nos envie uma mensagem!</a>
+                        </p>
+                    </div>
+                </div>
+                <p><!-- Botão voltar ao topo -->
+                    <script>
+                        function goBack() {
+                            window.history.back()
+                        };
+                        $(document).ready(goBack());
+                    </script>
+                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
+                </p>
+                
+                <br>
+                <div id="list-item-2" class="card text-center">
+                    <div class="card-header">
+                        <h4>Baixar a APOSTILA</h4>
+                    </div>
+                    <div class="card-body" align="center">
+                        <p class="card-text">A apostila do seu curso está em um dos <strong>Primeiros Módulos</strong>. Para realizar download, acompanhe os tutoriais abaixo. Não se esqueça de ter um leitor de PDF instalado no seu celular ou computador para conseguir abrir o arquivo!</p>
+                        <hr>
+                        <p><h5>Masterclass do Bolo Clássico Bem Feito 2.0</h5>
+                        Donwload da apostila do curso - Acesso pelo menu lateral da Plataforma
+                        <br><strong>O download da apostila não funciona via aplicativo!</strong></p>
+                        <p><img src="GIFs/apostila-2.0.gif" alt="purchase"></p><!-- GIF Apostila BCBF -->
+                        <hr>
+                        <p><strong>Imagens do passo a passo:</strong></p>
+                        <p><img src="Imagens/apostila_ana.jpg" class="img-fluid" alt="Apostila"></p><!-- Imagens da Apostila -->
+                        <hr>
+                        <p><h5>Masterclass Faça e Venda Bolos Caseiros</h5>
+                        Donwload da apostila do curso - Acesso pelo menu lateral da Plataforma
+                        <br><strong>O download da apostila não funciona via aplicativo!</strong></p>
+                        <p><img src="GIFs/Apostila Ana Costa.gif" alt="purchase"></p><!-- GIF Apostila BCBF -->
+                        <hr>
+                        <p><strong>Imagens do passo a passo:</strong></p>
+                        <p><img src="Imagens/apostila_ana1.jpg" class="img-fluid" alt="Apostila"></p><!-- Imagens da Apostila -->
+
+                        <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                            <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                            Não Conseguiu? Clique aqui e nos envie uma mensagem!</a>
+                        </p>
+                    </div>
+                </div>
+                <p><!-- Botão voltar ao topo -->
+                    <script>
+                        function goBack() {
+                            window.history.back()
+                        };
+                        $(document).ready(goBack());
+                    </script>
+                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
+                </p>
+                <br>
+                <div id="list-item-3" class="card text-center">
+                    <div class="card-header">
+                        <h4>Acesso ao meu BÔNUS</h4>
+                    </div>
+                    <div class="card-body" align="center">
+                        <p class="card-text">No lançamento de alguns cursos, a Chefe Ana Costa disponibiliza alguns bônus para seus alunos, de acordo com as regras estabelecidas em cada lançamento.
+                            <hr>
+                            Caso você tenha se enquadrado nessas regras e ganhou o bônus, parabéns! 
+                            <br> Agora para acessar ele é muito fácil, <b>aguarde o prazo de disponibilização</b> informado no lançamento do curso, e depois <u>acesse ele diretamente pela plataforma do seu curso</u>. 
+                            <hr>
+                            Ele não fica dentro do seu curso Masterclass, e sim como se fosse outro curso, ok?
+                        </p>        
+                        <p>Abaixo acesse o link para a plataforma do curso, mas entre através de um navegador de internet (no celular ou computador).</p>
+                        <hr>
+                        <p><strong>Veja como é fácil entrar na plataforma:</strong></p>
+                        <p><img src="GIFs/purchase.gif" alt="purchase"></p><!-- GIF Login Hotmart -->
+                        <!-- Card da Hotmart-->
+                        <div class="card mb-3" style="max-width: 720px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="Imagens/Login_hotmart.PNG" class="card-img-top" alt="Login_hotmart">
+                                </div>
+                                <div class="col-md-8" align="center">
+                                    <div class="card-body bg-light bg-gradient" >
+                                        <p class="card-text">Tendo o seu email e senha em mãos, basta você clicar no <strong>botão abaixo</strong> para acessar todos os cursos que você tem na plataforma.</p>
+                                        <a href="https://purchase.hotmart.com/" class="btn btn-warning">Login - Aqui</a>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-info" role="alert" style="max-width: 720px">
+                            <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top" >
+                            <strong>Informação importante:</strong>
+                            <hr>
+                            Os cursos disponibilizados como bônus, não estão disponíveis para venda, ok?
+                            <br> Mas calma, se tivermos novidades, vamos avisar os alunos por email!
+                        </div>
+                        <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                            <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                            Não Conseguiu? Tudo bem, clique aqui para nos enviar uma mensagem!</a>
+                        </p>
+                    </div>
+                </div>
+                <p><!-- Botão voltar ao topo -->
+                    <script>
+                        function goBack() {
+                            window.history.back()
+                        };
+                        $(document).ready(goBack());
+                    </script>
+                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
+                </p>
+                <br>
+                <div id="list-item-4" class="card text-center">
+                    <div class="card-header">
+                        <h4>Comunidade Facebook</h4>
+                    </div>
+                    <div class="card-body" align="center">
+                        <p class="card-text">A Chefe Ana Costa criou uma comunidade exclusiva no Facebook para os alunos do curso <strong>Masterclass Bolo Clássico Bem Feito 2.0!</strong>. 
+                            <hr>
+                            Para solicitar a participação, você precisa entrar na plataforma do curso, e procurar pelo <strong>"Módulo - Comunidade Facebook"</strong>.</p>
+                        <p><img src="GIFs/Face Ana.gif" alt="purchase"></p><!-- GIF Comunidade Face -->
+                        <!-- Card Comunidade Ana Costa -->
+                        <div class="card mb-3" style="max-width: 720px;">
+                            <div class="row g-0">                                
+                                <div class="col-md-8" align="center">
+                                    <div class="card-body bg-light bg-gradient">
+                                        <h5 class="card-title">Acesso ao link pela Plataforma do Curso</h5>
+                                        <p class="card-text">Leia todas as orientações deste módulo, e solicite a participação através do link que está ao final das orientações, em <strong>Leitura Complementar</strong>, depois é só aguardar a aprovação, que ocorrerá em até 24h. 
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="col-md-4">
+                                <img src="Imagens/Face_Ana1.jpg" class="card-img-top" alt="Face Ana">
+                            </div>
+                        </div>
+                        <div class="alert alert-warning" role="alert" style="max-width: 720px;">
+                            <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top" >
+                            <strong>Não se esqueça:</strong>
+                            <hr>
+                            Não deixe de <i>informar seu email</i> durante a solicitação, senão a participação na comunidade será recusada!
+                        </div>
+                        <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                            <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                            Não Conseguiu? Tudo bem, clique aqui para nos enviar uma mensagem!</a>
+                        </p>
+                    </div>
+                </div>
+                <p><!-- Botão voltar ao topo -->
+                    <script>
+                        function goBack() {
+                            window.history.back()
+                        };
+                        $(document).ready(goBack());
+                    </script>
+                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
+                </p>
+               <br>
+               <div id="list-item-5" class="card text-center">
+                    <div class="card-header">
+                        <h4>Dúvidas sobre Receitas e Utensílios</h4>
+                    </div>
+                    <div class="card-body" align="center">
+                        <p class="card-text"> <strong>Surgiu aquela dúvida na hora de preparar as receitas do curso?</strong>
+                            <hr>
+                        <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top">
+                        Bem que eu gostaria de te ajudar, mas ... eu sou só uma Assistente Virtual!
+                        <br>Ainda bem que você consegue enviar todas as suas dúvidas diretamente pela plataforma.</p>
+                        <p><img src="GIFs/Duvidas Ana.gif" alt="dúvidas"></p><!-- GIF Comentários -->
+                        <p>A sua dúvida vai ali em baixo da video aula, no campo de <strong>Comentários</strong>. Nesse campo você será respondido diretamente pela Chefe Ana Costa. <br>Além disso poderá conferir a dúvida de outras alunas, que já foram respondidas.</p>
+                    </div>
+                </div>
+                <p><!-- Botão voltar ao topo -->
+                    <script>
+                        function goBack() {
+                            window.history.back()
+                        };
+                        $(document).ready(goBack());
+                    </script>
+                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
+                </p>
+                <br>
+                <div id="list-item-6" class="card text-center">
+                    <div class="card-header">
+                        <h4>Canal de venda dos cursos</h4>
+                    </div>
+                    <div class="card-body" align="center">
+                        <p class="card-text">Todas as novidades sobre as novas turmas de cursos, e listas de espera, estão nas redes sociais da Chefe Ana Costa.
+                            <hr><img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top">
+                            <strong>Não perde tempo!</strong>
+                            <br>Siga as redes sociais da Chefe para conferir todas as novidades em primeira mão!
+                        </p>                     
+                        <!-- Card Ana Costa -->
+                        <div class="card mb-3" style="max-width: 720px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="Imagens/anacosta_card.PNG" class="card-img-top" alt="Ana" style="max-width: 60%;">
+                                </div>
+                                <div class="col-md-8" align="center">
+                                    <div class="card-body bg-light bg-gradient">
+                                        <h5 class="card-title">Chefe Ana Costa</h5>
+                                        <p class="card-text">Formada em Turismo, devido a sua paixão, se especializou em gastronomia. Já são mais de 20 anos de experiência no ramo. Ocupa um papel de grande destaque no segmento, sendo reconhecida em todo o território nacional por suas participações em programas de TV.</p>
+                                            <a href="https://www.instagram.com/chefeanacosta/?hl=pt-br" class="btn btn-primary">Conheça a Chefe Ana Costa</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <p><!-- Botão voltar ao topo -->
+                    <script>
+                        function goBack() {
+                            window.history.back()
+                        };
+                        $(document).ready(goBack());
+                    </script>
+                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
+                </p>
+                <br>
+                <div id="list-item-7" class="card" align="center">
+                    <h5 class="card-header">Minha dúvida não está aqui!</h5>
+                    <div class="card-body">
+                        <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top">
+                        Poxa que pena, eu gostaria tanto de ter te ajudado!
+                        <p class="card-text">Mas a equipe de suporte está pronta para te atender pelo Whatsapp!
+                        <hr>
+                        Os horários de atendimento pelo Whatsapp são:
+                            <li>Segunda a Sexta-Feira: Das 09h às 18h</li>
+                            <li>Sábado: Das 09h às 14h</li></p>
+                        <a href="http://bit.ly/alunosuporte" class="btn btn-success">Clique Aqui e Aguarde o Atendimento</a>
+                    </div>
+                </div>
+            </div>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="fs-6 text-center p-2 mb-2 bg-dark text-white">
+            <small>| Desenvolvido por Agência VICO |</small>
+            <br><a class="btn btn-dark btn-sm" href="https://api.whatsapp.com/send?phone=5515988265265" role="button">
+            <img src="Imagens/icone_whatsapp2.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+            <small class="text-muted">Fale conosco!</small></a>
+        </div>
+    </footer>
+</body>
+</html>
+
