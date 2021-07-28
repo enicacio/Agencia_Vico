@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<title>Suporte Oficial - Chefe Ana Costa</title>
+   	<title>Suporte Oficial - Chef Ana Costa</title>
     <meta charset="utf-8">	
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive Meta/Adaptação Mobile -->
 	   
 	<!-- SEO Geral  -->
-    <meta name="description" content="Brasel, esse é o suporte oficial dos cursos de confeitaria artesanal da Chefe Ana Costa. A resposta para as princípias dúvidas dos alunos, você encontra aqui!">
+    <meta name="description" content="Brasel, esse é o suporte oficial dos cursos de confeitaria artesanal da Chef Ana Costa. A resposta para as princípias dúvidas dos alunos, você encontra aqui!">
 	<meta name="author" content="Agência VICO">
 	<meta name="robots" content="index, nofollow">
  
 	<!-- CSS, JavaScript e Popper-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/Estilo.css">
 
+    <!-- Hotjar Tracking Code -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2506455,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 
 <body>
@@ -54,7 +66,7 @@
     
     <!-- Intro -->
     <p><div class="container-fluid text-center">
-        <h3>Bem vindo à Central de Suporte aos alunos da Chefe Ana Costa</h3>
+        <h3>Bem vindo à Central de Suporte aos alunos da Chef Ana Costa</h3>
         <br>
         <p>Fala Braseell! As principais dúvidas e solicitações que os meus alunos fazem estão aqui!
         <hr>Caso não encontre o que precisa, você também pode chamar a minha equipe de suporte no Whatsapp.</p>
@@ -65,22 +77,49 @@
     <main>
         <section id='FAQ' class="container-fluid">
             <div id="list-example" class="list-group" align="center">
-                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-1">Onde acesso o meu curso?</a>
-                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-2">Não sei onde está a Apostila!</a>
-                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-3">Cadê o meu Bônus?</a>
-                <a class="list-group-item list-group-item-action list-group-item-danger active" href="#list-item-4">Quero entrar na Comunidade no Facebook</a>
-                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-5">Perguntas para a Chefe Ana Costa</a>
-                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-6">Canal de venda dos cursos</a>
-                <a class="list-group-item list-group-item-action list-group-item-danger" href="#list-item-7">Minha Dúvida não está aqui!</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger active" href="#acesso">Onde acesso o meu curso?</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#bonus">Bônus e "100 PRIMEIROS"</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#apostila">Baixar a Apostila</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#comunidade-facebook">Quero entrar na Comunidade no Facebook</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#perguntaschef">Perguntas para a Chef Ana Costa</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="https://chefeanacosta.com.br/masterclass-faca-e-venda-bolos-caseiros">Canal de venda dos cursos</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#contato">Minha Dúvida não está aqui!</a>
             </div>
             <br>
-            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                <div id="list-item-1" class="card text-center">
+            <button id="back-to-top" class="btn btn-light" style="z-index: 1;">Voltar ao topo
+            <!-- JavaScrip do Botão Voltar -->
+            <script>
+                var btn = document.querySelector("#back-to-top");
+                btn.addEventListener("click", function() {
+                    window.scrollTo(0, 0);
+                });
+            </script>
+            </button>
+            
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" style="z-index: 0;">
+                <!-- <div id="semanagratuita" class="card text-center">
+                    <div class="card-header">
+                        <h4>SEMANA GRATUITA BOLOS EM CASA</h4>
+                    </div>
+                    <div class="card-body" align="center">
+                        <h5>Já começou Braseell!!</h5><br>
+                        <p><img src="Imagens/semanagratuita.png" alt="Semana Gratuita" class="img-fluid"></p>
+                        <br>
+                        <a href="https://www.youtube.com/c/mariareceita/videos?view=0&sort=dd&shelf_id=0" class="btn btn-warning btn-lg" tabindex="-1" role="button">Aulas</a>
+                        <a href="https://www.facebook.com/groups/semanabolosemcasachefanacosta/" class="btn btn-primary btn-lg" tabindex="-1" role="button">Receitas</a>
+                    </div> -->
+                <br>
+                <div id="acesso" class="card text-center">
                     <div class="card-header">
                         <h4>Acesso à plataforma do curso</h4>
                     </div>
                     <div class="card-body" align="center">
-                        <p class="card-text">Caso tenha perdido o seu link de acesso ao curso, ou precise <strong>revisar uma aula</strong> enquanto faz aquela receita, não se preocupe!
+                        <p class="card-text">
+                            <div class="alert alert-warning" role="alert" style="font-size: 18px;">
+                                <b>NOVO ALUNOS da Chef Ana Costa</b>: Após a confirmação do pagamento, o acesso ao curso é enviado por email, em até <b>3 dias úteis.</b>
+                            </div>
+                        <hr>
+                            Caso tenha perdido o seu link de acesso ao curso, ou precise <strong>revisar uma aula</strong> enquanto faz aquela receita, não se preocupe!
                         <hr>
                         Lembre-se sempre de <strong>acessar o curso por um navegador de internet</strong>, no celular, ou em outros dispositivos, assim não terá problemas para assistir o curso!</p>
                         <hr>
@@ -92,7 +131,7 @@
                                 <div class="col-md-4">
                                     <img src="Imagens/Login_hotmart.PNG" class="card-img-top" alt="Login_hotmart">
                                 </div>
-                                <div class="col-md-8" align="center">
+                                <div class="card-body col-md-8" align="center">
                                     <div class="card-body bg-light bg-gradient" >
                                         <p class="card-text">Tendo o seu email e senha em mãos, basta você clicar no <strong>botão abaixo</strong> para acessar todos os cursos que você tem na plataforma.</p>
                                         <a href="https://purchase.hotmart.com/" class="btn btn-warning">Login - Aqui</a>
@@ -107,29 +146,24 @@
                             Basta clicar na opção de <strong>"Esqueceu sua senha"</strong>que o Hotmart te enviará por email todas as instruções para criar uma senha nova!    
                         </div>
                         <p align="center">
-                            <a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                            <a class="btn btn-success" href="https://wa.me/5515988273402?text=Oi!%20Vim%20pelo%20FAQ%20da%20Chef%20Ana%20Costa" role="button">
                             <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
                             Não Conseguiu? Clique aqui e nos envie uma mensagem!</a>
                         </p>
                     </div>
-                </div>
-                <p><!-- Botão voltar ao topo -->
-                    <script>
-                        function goBack() {
-                            window.history.back()
-                        };
-                        $(document).ready(goBack());
-                    </script>
-                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
-                </p>
-                
+                </div>              
                 <br>
-                <div id="list-item-2" class="card text-center">
+                <div id="apostila" class="card text-center">
                     <div class="card-header">
                         <h4>Baixar a APOSTILA</h4>
                     </div>
                     <div class="card-body" align="center">
-                        <p class="card-text">A apostila do seu curso está em um dos <strong>Primeiros Módulos</strong>. Para realizar download, acompanhe os tutoriais abaixo. Não se esqueça de ter um leitor de PDF instalado no seu celular ou computador para conseguir abrir o arquivo!</p>
+                        <p class="card-text">
+                            <div class="alert alert-info" role="alert" style="font-size: 18px;">
+                                <b>NOVOS ALUNOS Chef Ana Costa</b>: A apostila estará disponível no dia <b><u>28/07/2021</u></b>!
+                            </div>
+                        <hr>
+                            A apostila do seu curso está em um dos <strong>Primeiros Módulos</strong>. Para realizar download, acompanhe os tutoriais abaixo. Não se esqueça de ter um leitor de PDF instalado no seu celular ou computador para conseguir abrir o arquivo!</p>
                         <hr>
                         <p><h5>Masterclass do Bolo Clássico Bem Feito 2.0</h5>
                         Donwload da apostila do curso - Acesso pelo menu lateral da Plataforma
@@ -147,28 +181,27 @@
                         <p><strong>Imagens do passo a passo:</strong></p>
                         <p><img src="Imagens/apostila_ana1.jpg" class="img-fluid" alt="Apostila"></p><!-- Imagens da Apostila -->
 
-                        <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                        <p><a class="btn btn-success" href="https://wa.me/5515988273402?text=Oi!%20Vim%20pelo%20FAQ%20da%20Chef%20Ana%20Costa" role="button">
                             <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
                             Não Conseguiu? Clique aqui e nos envie uma mensagem!</a>
                         </p>
                     </div>
                 </div>
-                <p><!-- Botão voltar ao topo -->
-                    <script>
-                        function goBack() {
-                            window.history.back()
-                        };
-                        $(document).ready(goBack());
-                    </script>
-                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
-                </p>
                 <br>
-                <div id="list-item-3" class="card text-center">
+                <div id="bonus" class="card text-center">
                     <div class="card-header">
                         <h4>Acesso ao meu BÔNUS</h4>
                     </div>
                     <div class="card-body" align="center">
-                        <p class="card-text">No lançamento de alguns cursos, a Chefe Ana Costa disponibiliza alguns bônus para seus alunos, de acordo com as regras estabelecidas em cada lançamento.
+                        <p class="card-text">
+                            <div class="alert alert-primary" role="alert" style="font-size: 18px;">
+                                <b>LISTA DOS 100 PRIMEIROS: será disponibilizada no dia <b><u>27/07/2021</u></b> no módulo 1 dentro da plataforma do curso</b>
+                            </div>
+                            <div class="alert alert-info" role="alert" style="font-size: 18px;">
+                                <b>NOVO ALUNOS Chef Ana Costa</b>: Os ganhadores do bônus receberão o acesso a eles por email, a partir do dia <b><u>27/07/2021</u></b>
+                            </div>
+                            <hr>
+                            No lançamento de alguns cursos, a Chef Ana Costa disponibiliza alguns bônus para seus alunos, de acordo com as regras estabelecidas em cada lançamento.
                             <hr>
                             Caso você tenha se enquadrado nessas regras e ganhou o bônus, parabéns! 
                             <br> Agora para acessar ele é muito fácil, <b>aguarde o prazo de disponibilização</b> informado no lançamento do curso, e depois <u>acesse ele diretamente pela plataforma do seu curso</u>. 
@@ -200,28 +233,19 @@
                             Os cursos disponibilizados como bônus, não estão disponíveis para venda, ok?
                             <br> Mas calma, se tivermos novidades, vamos avisar os alunos por email!
                         </div>
-                        <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                        <p><a class="btn btn-success" href="https://wa.me/5515988273402?text=Oi!%20Vim%20pelo%20FAQ%20da%20Chef%20Ana%20Costa" role="button">
                             <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
                             Não Conseguiu? Tudo bem, clique aqui para nos enviar uma mensagem!</a>
                         </p>
                     </div>
                 </div>
-                <p><!-- Botão voltar ao topo -->
-                    <script>
-                        function goBack() {
-                            window.history.back()
-                        };
-                        $(document).ready(goBack());
-                    </script>
-                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
-                </p>
                 <br>
-                <div id="list-item-4" class="card text-center">
+                <div id="comunidade-facebook" class="card text-center">
                     <div class="card-header">
                         <h4>Comunidade Facebook</h4>
                     </div>
                     <div class="card-body" align="center">
-                        <p class="card-text">A Chefe Ana Costa criou uma comunidade exclusiva no Facebook para os alunos do curso <strong>Masterclass Bolo Clássico Bem Feito 2.0!</strong>. 
+                        <p class="card-text">A Chef Ana Costa criou uma comunidade exclusiva no Facebook para os alunos do curso <strong>Masterclass Bolo Clássico Bem Feito 2.0!</strong>. 
                             <hr>
                             Para solicitar a participação, você precisa entrar na plataforma do curso, e procurar pelo <strong>"Módulo - Comunidade Facebook"</strong>.</p>
                         <p><img src="GIFs/Face Ana.gif" alt="purchase"></p><!-- GIF Comunidade Face -->
@@ -245,23 +269,14 @@
                             <hr>
                             Não deixe de <i>informar seu email</i> durante a solicitação, senão a participação na comunidade será recusada!
                         </div>
-                        <p><a class="btn btn-success" href="http://bit.ly/alunosuporte" role="button">
+                        <p><a class="btn btn-success" href="https://wa.me/5515988273402?text=Oi!%20Vim%20pelo%20FAQ%20da%20Chef%20Ana%20Costa" role="button">
                             <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
                             Não Conseguiu? Tudo bem, clique aqui para nos enviar uma mensagem!</a>
                         </p>
                     </div>
                 </div>
-                <p><!-- Botão voltar ao topo -->
-                    <script>
-                        function goBack() {
-                            window.history.back()
-                        };
-                        $(document).ready(goBack());
-                    </script>
-                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
-                </p>
                <br>
-               <div id="list-item-5" class="card text-center">
+               <div id="perguntaschef" class="card text-center">
                     <div class="card-header">
                         <h4>Dúvidas sobre Receitas e Utensílios</h4>
                     </div>
@@ -272,28 +287,19 @@
                         Bem que eu gostaria de te ajudar, mas ... eu sou só uma Assistente Virtual!
                         <br>Ainda bem que você consegue enviar todas as suas dúvidas diretamente pela plataforma.</p>
                         <p><img src="GIFs/Duvidas Ana.gif" alt="dúvidas"></p><!-- GIF Comentários -->
-                        <p>A sua dúvida vai ali em baixo da video aula, no campo de <strong>Comentários</strong>. Nesse campo você será respondido diretamente pela Chefe Ana Costa. <br>Além disso poderá conferir a dúvida de outras alunas, que já foram respondidas.</p>
+                        <p>A sua dúvida vai ali em baixo da video aula, no campo de <strong>Comentários</strong>. Nesse campo você será respondido diretamente pela Chef Ana Costa. <br>Além disso poderá conferir a dúvida de outras alunas, que já foram respondidas.</p>
                     </div>
                 </div>
-                <p><!-- Botão voltar ao topo -->
-                    <script>
-                        function goBack() {
-                            window.history.back()
-                        };
-                        $(document).ready(goBack());
-                    </script>
-                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
-                </p>
                 <br>
-                <div id="list-item-6" class="card text-center">
+                <div id="vendas" class="card text-center">
                     <div class="card-header">
                         <h4>Canal de venda dos cursos</h4>
                     </div>
                     <div class="card-body" align="center">
-                        <p class="card-text">Todas as novidades sobre as novas turmas de cursos, e listas de espera, estão nas redes sociais da Chefe Ana Costa.
+                        <p class="card-text">Todas as novidades sobre as novas turmas de cursos estão nas redes sociais da Chef Ana Costa.
                             <hr><img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top">
                             <strong>Não perde tempo!</strong>
-                            <br>Siga as redes sociais da Chefe para conferir todas as novidades em primeira mão!
+                            <br>Siga as redes sociais da Chef para conferir todas as novidades em primeira mão!
                         </p>                     
                         <!-- Card Ana Costa -->
                         <div class="card mb-3" style="max-width: 720px;">
@@ -303,9 +309,11 @@
                                 </div>
                                 <div class="col-md-8" align="center">
                                     <div class="card-body bg-light bg-gradient">
-                                        <h5 class="card-title">Chefe Ana Costa</h5>
+                                        <h5 class="card-title">Chef Ana Costa</h5>
                                         <p class="card-text">Formada em Turismo, devido a sua paixão, se especializou em gastronomia. Já são mais de 20 anos de experiência no ramo. Ocupa um papel de grande destaque no segmento, sendo reconhecida em todo o território nacional por suas participações em programas de TV.</p>
-                                            <a href="https://www.instagram.com/chefeanacosta/?hl=pt-br" class="btn btn-primary">Conheça a Chefe Ana Costa</a>
+                                            <a href="https://www.instagram.com/chefeanacosta/?hl=pt-br" class="btn btn-primary">Conheça a Chef Ana Costa</a>
+                                        </p>
+                                        <p><a href="https://chefeanacosta.com.br/listadeespera-boloscaseiros" class="btn btn-warning">Lista de Espera - Próximas turmas</a>
                                         </p>
                                     </div>
                                 </div>
@@ -313,17 +321,8 @@
                         </div>
                     </div>
                 </div>
-                <p><!-- Botão voltar ao topo -->
-                    <script>
-                        function goBack() {
-                            window.history.back()
-                        };
-                        $(document).ready(goBack());
-                    </script>
-                    <button class="btn btn-light" onclick="goBack()" style="border-color: gray;">Voltar para as Dúvidas</button>
-                </p>
                 <br>
-                <div id="list-item-7" class="card" align="center">
+                <div id="contato" class="card" align="center">
                     <h5 class="card-header">Minha dúvida não está aqui!</h5>
                     <div class="card-body">
                         <img src="Imagens/robot_face.png" alt="icone_robo" width="22" height="22" class="d-inline-block align-text-top">
@@ -333,7 +332,9 @@
                         Os horários de atendimento pelo Whatsapp são:
                             <li>Segunda a Sexta-Feira: Das 09h às 18h</li>
                             <li>Sábado: Das 09h às 14h</li></p>
-                        <a href="http://bit.ly/alunosuporte" class="btn btn-success">Clique Aqui e Aguarde o Atendimento</a>
+                            <a class="card-link btn btn-success" href="https://wa.me/5515988273402?text=Oi!%20Vim%20pelo%20FAQ%20da%20Chef%20Ana%20Costa" role="button">
+                                <img src="Imagens/icone_whatsapp.png" alt="icone_whatsapp" width="24" height="24" class="d-inline-block align-text-top">
+                                Clique Aqui e Aguarde o Atendimento</a>
                     </div>
                 </div>
             </div>
